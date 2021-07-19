@@ -1,0 +1,2 @@
+# K8S help Azure admins to host applications with out any downtime.
+#Kubernetes clusters are very powerful
