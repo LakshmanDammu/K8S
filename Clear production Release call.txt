@@ -1,0 +1,118 @@
+5/13/2021 CLEAR Production Dry-Run #2 Verification
+
+12:04 AM- Nick Oja provided CRQ for release overall:  CRQ000000222006
+
+12:30 AM- Under construction has been setup by Sai kiran Mandava at 12:11 AM for only Commercial.
+
+12:45 AM- Duck creek app release is completed by Nick Oja and informed Commercial Duckcreek app is up and running.
+
+12:50 AM- Terrance Neve has asked why there is a change in Password (Admin, Admin) for Commercial billing environment.
+Rexon, Nick and team has decided we can keep it as Admin, Admin itself.
+
+12:51 AM- Rahul has informed health checks for Commercial Duckcreek is not looking good.
+URL Has been updated to https://gzepcidca<ENV>appilb.geicoddc.net/duckcreek/api/healthcheck/appstatus in EHCP portal for Policy DC App
+https://geico.visualstudio.com/K027-%20All/_workitems/edit/3669924/
+
+12:55 AM-Dustin Roman has informed he performed Policy DuckCreek Health checks for PD1 and informed they are getting a certificate error after accessing URL.
+DNS Name-GZECLBDCAPD1AAPILB.geicoddc.net.
+link- http://localhost:8080/duckcreek/api/status
+Error- Server Error in '/DuckCreek' Application. HTTP 404.
+
+01:00 AM- Rexon Dsouza has informed he will check with Amy regarding Billing deployment as Billing team hasn't joined the call. 
+
+01:05 AM- Meanwhile, Dharmbir Kumar from Billing CM Team has joined the call and informed they are currently in a 
+seperate call (Beam 13-05-2021, billing release) and won't be able to join the present call (Clear production Release).
+
+01:10 AM-As the teams on call requested, Dharmbir has joined the call and performed code changes and changed from GZECLBDCAPD1AAPILB.geicoddc.net to
+GZEBCIDCAPD1AAPILB.geicoddc.net.
+
+01:20 AM- Nick has informed all the Deployments are now completed for Policy.
+
+01:25 AM- Nick has infirmed Duck creek health check is failing.
+
+01:30 AM- Teams on call has checked and found No one from Billing App team has joined the call.
+
+01:40 AM- Rahul Sadhineni has requested Dharambir to provide an update on his deployment status.
+
+01:45 AM- Nick has informed he is not planning any deployments in Devops Catalogue
+
+01:46 AM- Dharmbir from Billing CM team has informed COMBBS, COMBB deployments in PD1 is successfull but  its failing in PD8.
+
+01:46 AM- Policy and CIS telematics has been completed so far
+
+01:48 AM- Mary hill has joined the call
+
+01:50 AM- Rexon has informed to Mary that Billing deployments has started and its completed on PD1 and  he also checked if they can
+start Verification for PD1.
+
+01:54 AM- Dharmbir has informed Deployments are now completed and informed Dustin to check.Dustin has confirmed its all good.
+
+01:57 AM- Joann Thamby has informed CLEAR is now turned on. She also requested Devops L2 to keep the servers out of load balancers.
+
+02:05 AM- Rexon confirmed  Policy and CIS telematics looks good and the teams has checked UI and confirmed the same.
+
+02:25 AM- Teams observed an error while processing Quotes, they are getting error- The browser was unable to communicate with server,
+HTTP status Error -, HTTP Status - 0
+
+02:32 AM- Teams on call requested IRT to page SQL DBA team in order to resolve the above issue
+
+02:35 AM- IRT paged SQL DBA team, Sreeni chejerla from SQL DBA has joined the call.
+
+02:40 AM- DBA team has logged into server "gzepcidcspd1sq1" in order to fix the issue but couldn't.
+
+03:00 AM- Teams on call decided to turn off all the Duck creek services in PD8
+
+03:19 AM- Ranga has informed they can see Authentication failure errors in BBS.
+
+03:37 AM- Teams are performing verification through "POSTMAN"
+
+04:15 AM- Nick has informed they are Rolling back CIS on Azure side and Rolling back everything on-prem
+
+4:30 AM- Nick has informed Azure roll backs has been completed for PD1 and PD8
+
+4:59 AM- Joann has informed to put everything back into Load balancer and Sai kiran has did it.
+
+5:08 AM- Sai kiran mandava has removed Under construction 
+
+5:10 AM- Teams has informed IRT to enable back the Alerts, 
+
+Action item 1- West DB taking to East for billing side- Mathew from billing
+Action item 2- Duck creek API configuration changes
+However, further communication will be sent over email.
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
